@@ -1,0 +1,139 @@
+\documentclass{article}
+\usepackage{diagbox}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{booktabs}
+\usepackage{floatrow}
+\usepackage{caption}
+%to setup font size for picture caption: large  small  footnotesize scriptsize
+\captionsetup{font={scriptsize}}
+\usepackage{hyperref}
+
+
+
+%===========main()
+\begin{document}
+
+
+
+%-----------title()
+\title{Test report of the field issue "xxxxxxxxxxxxxxxxxxxxxx"}
+\author{SW}
+\date{\today}
+\maketitle
+
+
+%----------abstract()
+\begin{abstract}
+The behavior of this issue is that xxxxxxxxxxxxxxxxxxxxxx 
+when a xxxxxxxxxxxxxxxxxxxxxx. According to the xxx, this issue is related to xxxxxxxxxxxxxxxxxxxxxx. 
+\end{abstract}
+
+\section{Software version information}
+There are three different xxxxxxxxxxxxxxxxxxxxxx combinations, the first one is the release that the field issue reported on, the seond one is, the third one is.
+
+%-------------- dynamic table 
+\begin{center}
+\begin{table*}[h]
+%\centering
+
+\caption{SW Versions Comparision}
+\resizebox{\textwidth}{!}{%
+
+\begin{tabular}{|c|c|c|c|c|c|}
+\toprule
+    \diagbox{Notes}{Infor} & xxx Ver & xxx Ver & xxxx  & xxxx & xxxx \\
+\midrule
+    Issue Reported & MHI\_xx\_xxxxx\_xxxxx\_2 & xxxx\_xxX2\_xx\_ER\_x11\_037xxxx & xxx7\_xxxxxxxxH3\_xx\_NT\_Q1.15 & v2.1.905\_xxxxxxxxxxxx2\_xxxx.32.05A\_v7\_xxlu5 & xxU5\_xxxxxxxx2\_xxxxx1.5.50023\\
+\midrule
+    Issue Reported & MHI\_xx\_xxxxx\_xxxxx\_2 & xxxx\_xxX2\_xx\_ER\_x11\_037xxxx & xxx7\_xxxxxxxxH3\_xx\_NT\_Q1.15 & v2.1.905\_xxxxxxxxxxxx2\_xxxx.32.05A\_v7\_xxlu5 & xxU5\_xxxxxxxx2\_xxxxx1.5.50023\\
+\midrule
+    Issue Reported & MHI\_xx\_xxxxx\_xxxxx\_2 & xxxx\_xxX2\_xx\_ER\_x11\_037xxxx & xxx7\_xxxxxxxxH3\_xx\_NT\_Q1.15 & v2.1.905\_xxxxxxxxxxxx2\_xxxx.32.05A\_v7\_xxlu5 & xxU5\_xxxxxxxx2\_xxxxx1.5.50023\\
+\bottomrule
+
+\end{tabular}}
+\end{table*}
+\end{center}
+
+
+\section{Test Scenario}
+
+Setup different SxDx with xxxDB on xxxx MU and follow the steps,\\
+
+1. "Navigation", "Settings", "Map display", "xxxxxx xxxxx", back to map, find a location to enable streetview, press "Save". Then go to "Dxxxxxxxxxn", "xxxxxxxxxxxx", select one image, the screen should show the picture and preview map with Picture icon.\\
+
+2. Same step as 1, go to "xxxxxxxxxxxxxxxx" \\
+
+If the issue happens, the behavior is that xxxxxx xxxxx crashes.
+
+
+
+
+\section{Test Result}
+
+
+\begin{center}
+\begin{table*}[h]
+%\centering
+
+\caption{Test Result Matrix}
+\resizebox{\textwidth}{!}{%
+
+\begin{tabular}{|c|c|c|c|}
+\toprule
+    \diagbox{SxDx}{xxxDB} & TXxx\_xxxxxxxxH3\_xx\_NT\_Q1.15 & Txx4\_xxxxxxxBH3\_xU\_NT\_Q1.15  &  Txxx\_NxxxxxxxH3\_xx\_NT\_Q3.15 \\ 
+\midrule
+    Issue Reported (xxxx\_037) & OK (Fig~\ref{xxxxreport} and~\ref{xxxxissue1} ) & OK (Fig~\ref{xxxxissue2} and~\ref{xxxxissue3} ) & {\color{red} Crashed} (Fig~\ref{xxxxissue4} and~\ref{xxxxissue5} )\\ 
+\midrule
+    Issue (xxxx\_022) & OK (Fig~\ref{xxxxreport} and~\ref{xxxxissue1} ) & OK (Fig~\ref{xxxxissue2} and~\ref{xxxxissue3} ) & {\color{red} Crashed} (Fig~\ref{xxxxissue4} and~\ref{xxxxissue5} )\\ 
+\midrule
+    Issue xxx(xxxx\_021) & OK(Fig~\ref{xxxxreport} and~\ref{xxxxissue1} ) & OK(Fig~\ref{xxxxissue2} and~\ref{xxxxissue3} )& {\color{red} Crashed}(Fig~\ref{xxxxissue4} and~\ref{xxxxissue5} )\\ 
+\bottomrule
+
+\end{tabular}}
+\end{table*}
+\end{center}
+
+
+
+
+\section{Tickets for reference}
+\href{http://xxxx}{artfxxxxxx }\\
+\href{http://xxxxxx}{artfxxxxxxxxxx}
+
+
+%----------------------insert single images
+%\includegraphics[natwidth=200bp,natheight=287bp, width=70bp]{./pic/xxx_0.png}
+%\includegraphics[scale=0.2]{./pic/swdl262_navdb148_0.png}
+%\includegraphics[natwidth=200bp,natheight=287bp, width=70bp]{./pic/xxx_1.png}
+%\begin{figure}[h!]
+%\left
+%\includegraphics[scale=0.2]{./pic/xxxx_0.png}
+%\caption{\left}{Overall process}
+%\label{fig:method}
+%\end{figure}
+
+
+
+%----------------------insert images side by side
+\section{Screenshots}
+\begin{figure}[!h]
+\begin{floatrow}
+    \ffigbox{\includegraphics[scale = 0.2]{./pic/ScreenShot_xxxx.png}}{\caption{Preview}\label{xxxxreport}}
+    \ffigbox{\includegraphics[scale = 0.2]{./pic/ScreenShot_xxxx.png}}{\caption{display}\label{xxxxissue1}}
+\end{floatrow}
+\end{figure}
+\begin{figure}[!h]
+\begin{floatrow}
+    \ffigbox{\includegraphics[scale = 0.2]{./pic/ScreenShot_xxx.png}}{\caption{134 Preview}\label{xxxxjssue2}}
+    \ffigbox{\includegraphics[scale = 0.2]{./pic/ScreenShot_xxxx.png}}{\caption{Map display}\label{xxxxissue3}}
+\end{floatrow}
+\end{figure}
+
+
+% end===========main()
+\end{document}
+
